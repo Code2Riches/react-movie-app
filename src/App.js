@@ -11,9 +11,10 @@ import MovieFormPage from "./Pages/MovieFormPage";
 
 const App = () => {
 
-  const handleAddMovie = (title) => {
+  const handleAddMovie = (title, director) => {
     const newMovie = {
-      Title: title
+      Title: title,
+      Director: director
     }
     setMovieList([...movieList, newMovie])
   }
@@ -236,7 +237,7 @@ const sampleMovies = [
       "Released": "17 Apr 2011",
       "Runtime": "56 min",
       "Genre": "Adventure, Drama, Fantasy",
-      "Director": "N/A",
+      "Director": "Alan Taylor",
       "Writer": "David Benioff, D.B. Weiss",
       "Actors": "Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington",
       "Plot": "While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise up to power. Meanwhile a forgotten race, bent on destruction, plans to return after thousands of years in the North.",
@@ -266,7 +267,7 @@ const sampleMovies = [
       "Released": "03 Mar 2013",
       "Runtime": "44 min",
       "Genre": "Action, Drama, History",
-      "Director": "N/A",
+      "Director": "Johan Renck",
       "Writer": "Michael Hirst",
       "Actors": "Travis Fimmel, Clive Standen, Gustaf Skarsgård, Katheryn Winnick",
       "Plot": "The world of the Vikings is brought to life through the journey of Ragnar Lothbrok, the first Viking to emerge from Norse legend and onto the pages of history - a man on the edge of myth.",
@@ -296,7 +297,7 @@ const sampleMovies = [
       "Released": "01 Aug 2014",
       "Runtime": "42 min",
       "Genre": "Action, Crime, Drama",
-      "Director": "N/A",
+      "Director": "Danny Cannon",
       "Writer": "Bruno Heller",
       "Actors": "Ben McKenzie, Donal Logue, David Mazouz, Sean Pertwee",
       "Plot": "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
@@ -326,7 +327,7 @@ const sampleMovies = [
       "Released": "N/A",
       "Runtime": "50 min",
       "Genre": "Crime, Drama",
-      "Director": "N/A",
+      "Director": "K.S. Ravindra",
       "Writer": "Courtney Kemp Agboh",
       "Actors": "Omari Hardwick, Joseph Sikora, Andy Bean, Lela Loren",
       "Plot": "James \"Ghost\" St. Patrick, a wealthy New York night club owner who has it all, catering for the city's elite and dreaming big, lives a double life as a drug kingpin.",
@@ -356,7 +357,7 @@ const sampleMovies = [
       "Released": "28 Aug 2015",
       "Runtime": "49 min",
       "Genre": "Biography, Crime, Drama",
-      "Director": "N/A",
+      "Director": "Jose Padilha",
       "Writer": "Carlo Bernard, Chris Brancato, Doug Miro, Paul Eckstein",
       "Actors": "Wagner Moura, Boyd Holbrook, Pedro Pascal, Joanna Christie",
       "Plot": "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.",
@@ -386,7 +387,7 @@ const sampleMovies = [
       "Released": "20 Jan 2008",
       "Runtime": "49 min",
       "Genre": "Crime, Drama, Thriller",
-      "Director": "N/A",
+      "Director": "Vince Gilligan",
       "Writer": "Vince Gilligan",
       "Actors": "Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris",
       "Plot": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's financial future.",
@@ -504,7 +505,7 @@ const sampleMovies = [
       "Released": "30 Sep 2016",
       "Runtime": "55 min",
       "Genre": "Action, Crime, Drama",
-      "Director": "N/A",
+      "Director": "Paul McGuigan",
       "Writer": "Cheo Hodari Coker",
       "Actors": "Mahershala Ali, Mike Colter, Frankie Faison, Erik LaRay Harvey",
       "Plot": "Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
